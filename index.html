@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.S. PADMESH | Cybersecurity Analyst & Web Designer</title>
+    <meta name="description" content="Interactive portfolio of P.S. Padmesh - Cybersecurity Analyst & Web Designer">
+    <link rel="stylesheet" href="src/css/main.css">
+</head>
+<body>
+    <!-- Futuristic Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="cyber-logo">
+                <div class="logo-text">P.S.PADMESH</div>
+                <div class="logo-subtitle">Cybersecurity Analyst | Secure Web Engineer</div>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <div class="loading-text">INITIALIZING SECURE CONNECTION...</div>
+        </div>
+        <div class="matrix-bg"></div>
+    </div>
+
+    <!-- Floating Navigation -->
+    <nav class="cyber-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">HOME</a>
+                <a href="#about" class="nav-link">ABOUT</a>
+                <a href="#skills" class="nav-link">SKILLS</a>
+                <a href="#experience" class="nav-link">EXPERIENCE</a>
+                <a href="#internships" class="nav-link">INTERNSHIPS</a>
+                <a href="#certifications" class="nav-link">CERTIFICATIONS</a>
+                <a href="#projects" class="nav-link">PROJECTS</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg">
+            <canvas id="particleCanvas"></canvas>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">P.S.</span>
+                    <span class="title-line glitch" data-text="PADMESH">PADMESH</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="typing-text">CYBERSECURITY ANALYST & WEB DESIGNER</span>
+                </div>
+                <div class="hero-description">
+                    Security-first engineering for modern web platforms.
+                </div>
+                <div class="hero-buttons">
+                    <button class="cyber-btn primary" onclick="scrollToSection('projects')">VIEW PROJECTS</button>
+                    <button class="cyber-btn secondary" onclick="scrollToSection('contact')">GET IN TOUCH</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-container">
+                    <div class="profile-image">
+                        <img src="src/assets/images/me.jpeg" alt="P.S. Padmesh" class="profile-photo">
+                        <div class="profile-ring"></div>
+                        <div class="profile-glow"></div>
+                        <div class="profile-particles"></div>
+                    </div>
+                    <div class="profile-status">
+                        <div class="status-indicator"></div>
+                        <span>ONLINE - OPERATIONAL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">PROFILE.summary</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Cybersecurity analyst specializing in secure web development and application security. I focus on identifying vulnerabilities, enforcing security controls, and building systems designed to withstand real-world threats.</p>
+                    <p>My expertise spans across penetration testing, secure coding practices, and modern web technologies. I believe in building digital experiences that are both beautiful and bulletproof.</p>
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">Days of Hands-on Security Labs</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">550+</span>
+                            <span class="stat-label">Days of Language Learning</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="cyber-radar" id="militaryRadar">
+                        <div class="radar-circle">
+                            <div class="radar-sweep"></div>
+                            <div class="radar-ripple" id="radarRipple"></div>
+                            <div class="radar-dot" style="top: 30%; left: 60%;"></div>
+                            <div class="radar-dot" style="top: 70%; left: 40%;"></div>
+                        </div>
+                        <div class="radar-label">THREAT DETECTION: <span id="radarStatus">SCANNING</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">SKILLS.arsenal</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+    <div class="skill-category">
+        <h3>🛡️ Cybersecurity</h3>
+        <div class="skill-items">
+            <div class="skill-item interactive-skill">Penetration Testing</div>
+            <div class="skill-item interactive-skill">Vulnerability Assessment</div>
+            <div class="skill-item interactive-skill">Web Application Security</div>
+            <div class="skill-item interactive-skill">Network Security</div>
+            <div class="skill-item interactive-skill">Cryptography Basics</div>
+        </div>
+    </div>
+
+    <div class="skill-category">
+        <h3>💻 Development</h3>
+        <div class="skill-items">
+            <div class="skill-item interactive-skill">JavaScript</div>
+            <div class="skill-item interactive-skill">Python</div>
+            <div class="skill-item interactive-skill">HTML & CSS</div>
+            <div class="skill-item interactive-skill">React (Basics)</div>
+            <div class="skill-item interactive-skill">Node.js (Basics)</div>
+        </div>
+    </div>
+
+    <div class="skill-category">
+        <h3>🔧 Tools & Platforms</h3>
+        <div class="skill-items">
+            <div class="skill-item interactive-skill">Packet Sniffers</div>
+            <div class="skill-item interactive-skill">Password Crackers</div>
+            <div class="skill-item interactive-skill">Web Application Firewalls</div>
+            <div class="skill-item interactive-skill">Powershell Management</div>
+            <div class="skill-item interactive-skill">Linux Administration</div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section --> 
+<!-- Experience Section --> 
+<!-- Experience Section --> 
+<section id="experience" class="experience-section">
+    <div class="section-container">
+        <div class="section-header">
+            <h2 class="section-title">EXPERIENCE.log</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="experience-timeline">
+
+            <div class="timeline-item interactive-timeline">
+                <div class="timeline-date">SYSTEMS</div>
+                <div class="timeline-content">
+                    <h3>OS Management</h3>
+                    <p>
+                        Daily experience working with Linux systems including Arch-based,
+                        Debian-based, Ubuntu, Kali, and custom setups. Actively used different
+                        package managers, handled system configuration, broke and fixed installs,
+                        and tuned environments for performance, stability, and workflow.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item interactive-timeline">
+                <div class="timeline-date">SECURITY</div>
+                <div class="timeline-content">
+                    <h3>Offensive Security & CTF Practice</h3>
+                    <p>
+                        Spent a significant amount of time doing CTFs and hands-on security labs
+                        across web exploitation, privilege escalation, cryptography, networking,
+                        and Linux internals. Built an attacker mindset through constant trial,
+                        failure, and iteration.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item interactive-timeline">
+                <div class="timeline-date">TOOLS</div>
+                <div class="timeline-content">
+                    <h3>Security Tooling</h3>
+                    <p>
+                        Worked with a wide range of security and networking tools through real use,
+                        not just demos. Focused on understanding how tools behave, misconfigure,
+                        and fail in practical scenarios rather than running them blindly.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item interactive-timeline">
+                <div class="timeline-date">HARDWARE</div>
+                <div class="timeline-content">
+                    <h3>Hardware Diagnostics & Repair</h3>
+                    <p>
+                        Part of Dedcell, working hands-on with computer hardware repairs and system
+                        troubleshooting. Dealt with faulty components, system failures, upgrades,
+                        and low-level issues that directly affect operating systems and performance.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item interactive-timeline">
+                <div class="timeline-date">AI</div>
+                <div class="timeline-content">
+                    <h3>Applied AI & Model Implementation</h3>
+                    <p>
+                        Built and implemented multiple custom and heavily modified (obliterated)
+                        AI models. Focused on making models actually run and integrate rather than
+                        just training them on paper, gaining hands-on experience with real-world
+                        AI behavior and limitations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item interactive-timeline">
+                <div class="timeline-date">WEB</div>
+                <div class="timeline-content">
+                    <h3>Web Design & Development</h3>
+                    <p>
+                        Designed and built multiple websites from scratch, working on layout,
+                        responsiveness, styling, and interaction. Paid attention to performance,
+                        structure, and usability while keeping security considerations in mind.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item interactive-timeline">
+                <div class="timeline-date">UX</div>
+                <div class="timeline-content">
+                    <h3>System Ricing & Workflow Setup</h3>
+                    <p>
+                        Spent a lot of time customizing Linux environments — window managers,
+                        terminals, themes, keybindings, and automation. Focused on making systems
+                        faster, cleaner, and personally efficient rather than just visually flashy.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Internships Section -->
+    <section id="internships" class="internships-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">INTERNSHIPS.journey</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="internships-grid">
+                <div class="internship-card interactive-card">
+                    <h3>Cyber Forensics Intern</h3>
+                    <h4>Police Cyber Department</h4>
+                    <p>During my internship with the Police Cyber Department, I gained hands-on exposure to real-world cybercrime investigations and digital forensics practices. I assisted in analyzing digital evidence, understanding investigation workflows, and observing how cyber incidents are documented and handled within a legal framework. This experience helped me develop a strong understanding of the ethical, procedural, and investigative aspects of cybersecurity in law enforcement environments.</p>
+                </div>
+                <div class="internship-card interactive-card">
+                    <h3>Penetration Testing Intern</h3>
+                    <h4>Hacktify Cyber Security</h4>
+                    <p>As a Penetration Testing Intern at Hacktify Cyber Security, I worked in offensive security environments focused on identifying and analyzing vulnerabilities in web applications. I practiced penetration testing methodologies, explored common attack vectors such as SQL injection, cross-site scripting, and misconfigurations, and learned how vulnerabilities are documented and reported professionally. This role strengthened my practical understanding of ethical hacking and security assessment workflows.</p>
+                </div>
+                <div class="internship-card interactive-card">
+                    <h3>Penetration Tester Intern</h3>
+                    <h4>Human Initials</h4>
+                    <p>At Human Initials, I worked as a Penetration Tester Intern, where I conducted security testing on web applications and network components. I used tools such as Nmap, Burp Suite, and Metasploit to assess attack surfaces and identify potential security weaknesses. The internship enhanced my ability to think like an attacker while maintaining a defensive mindset, with a strong focus on clear reporting and remediation awareness.</p>
+                </div>
+                <div class="internship-card interactive-card">
+                    <h3>Top 1% Global Rank</h3>
+                    <h4>TryHackMe</h4>
+                    <p>Through consistent hands-on practice on TryHackMe, I achieved a Top 1% global ranking, reflecting my dedication to continuous learning in cybersecurity. I completed a wide range of practical labs covering web exploitation, network security, privilege escalation, and red team concepts. This experience significantly improved my problem-solving skills and reinforced my ability to apply theoretical knowledge to realistic, real-world security scenarios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">CERTIFICATIONS.db</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="certifications-grid">
+                <div class="cert-card interactive-card">
+                    <h3>API Penetration Testing</h3>
+                    <p>APISEC University - 2025</p>
+                </div>
+                <div class="cert-card interactive-card">
+                    <h3>OWASP API Security Top 10</h3>
+                    <p>APISEC University - 2025</p>
+                </div>
+                <div class="cert-card interactive-card">
+                    <h3>API Documentation Best Practices</h3>
+                    <p>APISEC University - 2025</p>
+                </div>
+                <div class="cert-card interactive-card">
+                    <h3>Securing API Servers</h3>
+                    <p>APISEC University - 2025</p>
+                </div>
+                <div class="cert-card interactive-card">
+                    <h3>API Authentication</h3>
+                    <p>APISEC University - 2025</p>
+                </div>
+                <div class="cert-card interactive-card">
+                    <h3>API Security Fundamentals 2025</h3>
+                    <p>APISEC University - 2025</p>
+                </div>
+                <div class="cert-card interactive-card">
+                    <h3>Building Security into AI</h3>
+                    <p>APISEC University - 2026</p>
+                </div>
+                <div class="cert-card interactive-card">
+                    <h3>Web Application Security & Testing</h3>
+                    <p>Taggart Institute - 2025</p>
+                </div>
+                <div class="cert-card interactive-card">
+                    <h3>Cryptography</h3>
+                    <p>IT Masters - 2025</p>
+                </div>
+                <div class="cert-card interactive-card">
+                    <h3>Pentesting</h3>
+                    <p>IT Masters - 2025</p>
+                </div>
+                <div class="cert-card interactive-card">
+                    <h3>Kali Linux</h3>
+                    <p>Coursera - 2025</p>
+                </div>
+                <div class="cert-card interactive-card">
+                    <h3>Linux System Administration</h3>
+                    <p>Coursera - 2025</p>
+                </div>
+                <div class="cert-card interactive-card">
+                    <h3>Hacking Wi-Fi Networks</h3>
+                    <p>Coursera - 2025</p>
+                </div>
+                <div class="cert-card interactive-card">
+                    <h3>Penetration Testing & Cryptography</h3>
+                    <p>Coursera - 2025</p>
+                </div>
+                <div class="cert-card interactive-card">
+                    <h3>+ Many Nano Certifications</h3>
+                    <p><a href="https://www.coursera.org/user/b1ebdcc6c4eb284b228e7227011b2658" target="_blank" style="color: var(--primary-color);">View All</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">PROJECTS.arsenal</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card interactive-project">
+                    <div class="project-header">
+                        <div class="project-icon">🕐</div>
+                        <div class="project-status">COPYRIGHTED</div>
+                    </div>
+                    <h3>Not-This-Time</h3>
+                    <p>Revolutionary Temporal Authentication system that authenticates users based on keystroke timing patterns.</p>
+                    <div class="project-tags">
+                        <span class="tag">Temporal Auth</span>
+                        <span class="tag">Security</span>
+                    </div>
+                    <a href="https://pendulum-j7nc.onrender.com/" target="_blank" class="project-link">VIEW PROJECT</a>
+                </div>
+                <div class="project-card interactive-project">
+                    <div class="project-header">
+                        <div class="project-icon">🔍</div>
+                        <div class="project-status">ACTIVE</div>
+                    </div>
+                    <h3>Unveil</h3>
+                    <p>Comprehensive website integrity checker that analyzes and verifies security posture of web applications.</p>
+                    <div class="project-tags">
+                        <span class="tag">Security Scanner</span>
+                        <span class="tag">Web Security</span>
+                    </div>
+                    <a href="https://github.com/padmesh6119/Unveil" target="_blank" class="project-link">VIEW PROJECT</a>
+                </div>
+                <div class="project-card interactive-project">
+                    <div class="project-header">
+                        <div class="project-icon">🔐</div>
+                        <div class="project-status">COMPLETED</div>
+                    </div>
+                    <h3>Crypto-Suite</h3>
+                    <p>Intelligent encryption and decryption tool that automatically identifies input types and applies appropriate cryptographic operations.</p>
+                    <div class="project-tags">
+                        <span class="tag">Encryption</span>
+                        <span class="tag">Cryptography</span>
+                    </div>
+                    <a href="#" class="project-link">VIEW PROJECT</a>
+                </div>
+                <div class="project-card interactive-project">
+                    <div class="project-header">
+                        <div class="project-icon">🔎</div>
+                        <div class="project-status">FEATURED</div>
+                    </div>
+                    <h3>Revealt</h3>
+                    <p>Forensic file analysis tool that identifies true file types by examining hexadecimal signatures and detecting potential malware.</p>
+                    <div class="project-tags">
+                        <span class="tag">File Analysis</span>
+                        <span class="tag">Malware Detection</span>
+                    </div>
+                    <a href="https://github.com/padmesh6119/Revealt" target="_blank" class="project-link">VIEW PROJECT</a>
+                </div>
+                <div class="project-card interactive-project">
+                    <div class="project-header">
+                        <div class="project-icon">🧩</div>
+                        <div class="project-status">ACTIVE</div>
+                    </div>
+                    <h3>Munch</h3>
+                    <p>CTF Swiss Army knife - Command-line tool for encoding, decoding, and hashing with Base64, Hex, ROT variations, and hash identification.</p>
+                    <div class="project-tags">
+                        <span class="tag">CTF Tool</span>
+                        <span class="tag">CLI</span>
+                    </div>
+                    <a href="https://github.com/padmesh6119/Munch" target="_blank" class="project-link">VIEW PROJECT</a>
+                </div>
+                <div class="project-card interactive-project">
+                    <div class="project-header">
+                        <div class="project-icon">🛡</div>
+                        <div class="project-status">DEVELOPMENT</div>
+                    </div>
+                    <h3>SecureVault</h3>
+                    <p>Advanced password manager with biometric authentication and zero-knowledge encryption architecture.</p>
+                    <div class="project-tags">
+                        <span class="tag">Password Manager</span>
+                        <span class="tag">Biometric Auth</span>
+                    </div>
+                    <a href="#" class="project-link">VIEW PROJECT</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">CONTACT.secure</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-cards">
+                    <div class="contact-card" onclick="window.open('mailto:padmesh77123@gmail.com', '_blank')">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <a href="mailto:padmesh77123@gmail.com">padmesh77123@gmail.com</a>
+                    </div>
+                    <div class="contact-card" onclick="window.open('https://www.linkedin.com/in/padmesh1101', '_blank')">
+                        <div class="contact-icon">💼</div>
+                        <h3>LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/padmesh1101" target="_blank">www.linkedin.com/in/padmesh1101</a>
+                    </div>
+                    <div class="contact-card" onclick="window.open('https://github.com/padmesh6119', '_blank')">
+                        <div class="contact-icon">🐙</div>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/padmesh6119" target="_blank">github.com/padmesh6119</a>
+                    </div>
+                    <div class="contact-card" onclick="window.open('tel:+917010612013', '_self')">
+                        <div class="contact-icon">📱</div>
+                        <h3>Phone</h3>
+                        <a href="tel:+917010612013">+91 7010612013</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="glitch-footer" data-text="© 2025 P.S. PADMESH | DIGITAL PORTFOLIO | ALL RIGHTS RESERVED">
+            © 2025 P.S. PADMESH | DIGITAL PORTFOLIO | ALL RIGHTS RESERVED
+        </div>
+    </footer>
+
+    <div class="interactive-background" id="interactiveBg"></div>
+    <div class="scroll-progress">
+        <div class="progress-bar"></div>
+    </div>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>
