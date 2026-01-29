@@ -2754,3 +2754,10 @@ section {
     min-height: auto !important;
     padding-bottom: 10px;
 }
+/* Fix Coursera link */
+.cert-card a {
+    pointer-events: auto !important;
+    z-index: 1000 !important;
+    position: relative !important;
+    display: inline-block !important;
+}
