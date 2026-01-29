@@ -1736,7 +1736,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Interactive mouse trail with different shapes
         let trailElements = [];
         document.addEventListener('mousemove', (e) => {
-            const shapes = ['●'];
+            const shapes = ['1','0'];
             const trail = document.createElement('div');
             trail.textContent = shapes[Math.floor(Math.random() * shapes.length)];
             trail.style.cssText = `
